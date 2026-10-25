@@ -147,7 +147,8 @@ Khoj is an educational health advocacy prototype. Patterns and possibilities sha
 
 ---
 
-## 👩‍💻 Author & Contributions
+## 👩‍💻 Authors & Team
 
-Built with ❤️ by **[Nidhi Sharma](https://github.com/nidhi071113)** for women's healthcare empowerment in India.
+Built with ❤️ by **[Nidhi Shirsath](https://github.com/nidhi071113)** and **Srushti Shinde** for women's healthcare empowerment in India.
+
 Contributions and feedback are warmly welcomed via Pull Requests and Issues!
