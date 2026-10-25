@@ -1,7 +1,7 @@
 # KHOJ · खोज 🌸
 ### *Find what your body is trying to tell you.*
 
-🚀 **Live Deployed Web App for Judges**: **[https://khoj-womens-health.vercel.app/](https://khoj-womens-health.vercel.app/)**
+🚀 **Live Deployed Web App**: **[https://khoj-womens-health.vercel.app/](https://khoj-womens-health.vercel.app/)**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-khoj--womens--health.vercel.app-success?style=for-the-badge&logo=vercel)](https://khoj-womens-health.vercel.app/)
 [![React](https://img.shields.io/badge/React-19-blue.svg)](https://react.dev/)
