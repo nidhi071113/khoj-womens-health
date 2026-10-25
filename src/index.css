@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cream: #FFF8F2;
+    --blush: #FBE6DE;
+    --blush-deep: #F6D3C7;
+    --plum: #5B2A4E;
+    --sindoor: #C8553D;
+    --sage: #7A9E7E;
+    --clay: #EADCCB;
+    --ink: #2B2230;
+    --emergency: #B3261E;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FFF8F2;
+    color: #2B2230;
+    font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Fraunces', serif;
+    letter-spacing: -0.02em;
+    color: #5B2A4E;
+  }
+
+  button, a, input, select, textarea {
+    touch-action: manipulation;
+  }
+
+  /* Focus ring for accessibility */
+  :focus-visible {
+    outline: 2px solid #C8553D;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom thread animation and styling */
+.thread-stroke {
+  stroke-dasharray: 8 6;
+  animation: thread-dash 20s linear infinite;
+}
+
+@keyframes thread-dash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .thread-stroke {
+    animation: none !important;
+  }
+}
+
+/* Custom scrollbar for horizontal chip containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

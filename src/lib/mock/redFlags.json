@@ -1,0 +1,55 @@
+{
+  "ruleVersion": "demo-0.1",
+  "disclaimer": "DEMO RULES, not clinically reviewed. For prototype and hackathon demonstration only.",
+  "rules": [
+    {
+      "id": "RF-01-SELF-HARM",
+      "symptomCodes": ["self_harm", "hopelessness_severe"],
+      "level": "emergency",
+      "message": "We want you to be completely safe. Please speak to someone who can help right now. Support is free, confidential, and available 24/7.",
+      "contactNumber": "14416",
+      "serviceName": "Tele-MANAS (National Mental Health Helpline)"
+    },
+    {
+      "id": "RF-02-FAINTING-HEAVY-BLEED",
+      "symptomCodes": ["fainting", "heavy_bleeding"],
+      "requiresAll": true,
+      "level": "urgent",
+      "message": "Fainting or severe dizziness combined with heavy bleeding needs immediate medical attention to check your blood pressure and blood count.",
+      "contactNumber": "112",
+      "serviceName": "Emergency Medical Services"
+    },
+    {
+      "id": "RF-03-PAD-SOAKING-RAPID",
+      "symptomCodes": ["pad_soaking_hourly"],
+      "level": "urgent",
+      "message": "Soaking through one or more menstrual pads every hour for two consecutive hours is considered unusually rapid blood loss.",
+      "contactNumber": "108",
+      "serviceName": "Ambulance / Nearest Hospital Emergency"
+    },
+    {
+      "id": "RF-04-PREGNANCY-BLEED-PAIN",
+      "lifeStage": "pregnant",
+      "symptomCodes": ["pelvic_pain_severe", "heavy_bleeding", "spotting_pain"],
+      "level": "urgent",
+      "message": "Any vaginal bleeding or sharp abdominal pain during pregnancy requires an immediate check with an obstetrician.",
+      "contactNumber": "112",
+      "serviceName": "Emergency Maternity Triage"
+    },
+    {
+      "id": "RF-05-POSTPARTUM-FEVER-BLEED",
+      "lifeStage": "postpartum",
+      "symptomCodes": ["postpartum_fever", "heavy_bleeding", "wound_infection"],
+      "level": "urgent",
+      "message": "High fever, chills, or sudden heavy bleeding after childbirth can be a sign of infection and needs urgent clinical care.",
+      "contactNumber": "108",
+      "serviceName": "Maternity Emergency Care"
+    },
+    {
+      "id": "RF-06-BREAST-LUMP",
+      "symptomCodes": ["breast_lump"],
+      "level": "soon",
+      "message": "A new breast lump or localized skin dimpling is best examined in person by a clinician within the week for routine clarity."
+    }
+  ]
+}
